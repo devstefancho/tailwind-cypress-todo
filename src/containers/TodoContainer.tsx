@@ -30,7 +30,7 @@ const TodoContainer: FC = () => {
   return (
     <div className="mx-12 my-8">
       <InputContainer setItem={setItem} />
-      <ul className="flex flex-col gap-y-4 my-8">
+      <ul className="flex flex-col gap-y-4 my-8" data-cy="todo-list">
         {list.map((item) => {
           return (
             <li

@@ -35,3 +35,10 @@
 //     }
 //   }
 // }
+export {};
+/**
+ * @see https://docs.cypress.io/guides/tooling/typescript-support#Configure-tsconfig-json
+ */
+Cypress.Commands.add("dataCy", (value: string) => {
+  return cy.get(`[data-cy=${value}]`);
+});

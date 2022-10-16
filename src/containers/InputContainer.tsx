@@ -23,12 +23,17 @@ const InputContainer: FC<Props> = ({ setItem }) => {
       <input
         type="text"
         id="new-todo"
+        data-cy="input-text"
         autoComplete="off"
         className="border rounded py-2 px-2.5"
         value={value}
         onChange={changeHandler}
       />
-      <button type="submit" className="p-3 border border-gray-500 rounded">
+      <button
+        type="submit"
+        data-cy="add-new-btn"
+        className="p-3 border border-gray-500 rounded"
+      >
         <GrAdd />
       </button>
     </form>
