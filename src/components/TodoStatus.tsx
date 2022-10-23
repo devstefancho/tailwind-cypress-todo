@@ -11,9 +11,9 @@ const TodoStatus: FC<Props> = ({ isComplete }) => {
   return (
     <>
       {isComplete ? (
-        <MdDone className="fill-green-500 group-hover:fill-white" />
+        <MdDone className="fill-green-500 group-hover:fill-white text-body1" />
       ) : (
-        <RiTodoLine className="group-hover:fill-white" />
+        <RiTodoLine className="group-hover:fill-white text-body1" />
       )}
     </>
   );

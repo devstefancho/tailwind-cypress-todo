@@ -25,16 +25,16 @@ const InputContainer: FC<Props> = ({ setItem }) => {
         id="new-todo"
         data-cy="input-text"
         autoComplete="off"
-        className="border rounded py-2 px-2.5"
+        className="border rounded py-2 px-2.5 text-body1 flex-1"
         value={value}
         onChange={changeHandler}
       />
       <button
         type="submit"
         data-cy="add-new-btn"
-        className="p-3 border border-gray-500 rounded"
+        className="p-3 border border-gray-500 rounded text-body1 hover:bg-gray-200"
       >
-        <GrAdd />
+        <GrAdd className="hover:fill-white"/>
       </button>
     </form>
   );

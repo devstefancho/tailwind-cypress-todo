@@ -9,7 +9,7 @@ type Props = {
 const TodoItem: FC<Props> = ({ text, isComplete }) => {
   return (
     <div
-      className={`group-hover:text-white ${isComplete ? "line-through" : ""}`}
+      className={`group-hover:text-white text-body1 ${isComplete ? "line-through" : ""}`}
     >
       {text}
     </div>

@@ -11,8 +11,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/public/favicon.ico" />
       </Head>
 
-      <h1 className="font-body text-h3 pl-11">TODO List</h1>
-      <TodoContainer />
+      <main className="flex justify-center items-center flex-col mt-10">
+        <h1 className="font-body text-h3">나의 할일</h1>
+        <TodoContainer />
+      </main>
     </div>
   );
 };
