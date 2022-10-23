@@ -45,7 +45,7 @@ const TodoContainer: FC = () => {
             >
               <TodoStatus isComplete={item.isComplete} />
               <TodoItem text={item.text} isComplete={item.isComplete} />
-              <RiDeleteBinLine className="group-hover:fill-white text-body1 ml-auto" onClick={() => removeItem(item.id)}/>
+              <RiDeleteBinLine className="group-hover:fill-white text-body1 ml-auto" onClick={() => removeItem(item.id)} data-cy="remove-btn"/>
             </li>
           );
         })}
