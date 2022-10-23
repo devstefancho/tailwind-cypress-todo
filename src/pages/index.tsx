@@ -11,6 +11,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/public/favicon.ico" />
       </Head>
 
+      <h1 className="font-body text-h3 pl-11">TODO List</h1>
       <TodoContainer />
     </div>
   );
