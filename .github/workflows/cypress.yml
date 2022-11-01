@@ -13,3 +13,5 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           project: ./cypress/e2e
+          build: npm run build
+          start: npm start
